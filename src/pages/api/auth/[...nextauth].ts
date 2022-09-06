@@ -45,7 +45,7 @@ export default NextAuth({
       name: 'Keycloak',
       clientId: process.env.KEYCLOAK_CLIENT_ID!,
       clientSecret: process.env.KEYCLOAK_CLIENT_SECRET!,
-      issuer: 'http://127.0.0.1:8080/realms/pannucorp',
+      issuer: process.env.KEYCLOAK_BASE_URL,
       requestTokenUrl: `${process.env.KEYCLOAK_BASE_URL}/protocol/openid-connect/auth`,
       authorization: {
         params: {
