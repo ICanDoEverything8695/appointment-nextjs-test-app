@@ -26,10 +26,13 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # local env files
-.env*.local
+# .env*.local
 
 # vercel
 .vercel
 
 # typescript
 *.tsbuildinfo
+
+# Local Netlify folder
+.netlify
